@@ -4,14 +4,17 @@ async function getWithFetch() {
   //const res = await fetch("https://jsonplaceholder.typicode.com/posts");
   const res = await fetch("https://marketplace.freelancewebdesign.online/wp-json/wp/v2/projects");
   const items = await res.json();
+  
   //console.log(finalRes);
-console.log("\n################################");
-console.log("Title: "+items[0].title.rendered);
-console.log("Descripton:"+items[0].acf.description);
-console.log("Date:"+items[0].date);
-console.log("Content:"+items[0].content.rendered);
-console.log("Image:"+items[0].better_featured_image.source_url);
-console.log("\n##################################");
+
+// console.log("\n################################");
+// console.log("Title: "+items[i].title.rendered);
+// console.log("Descripton:"+items[i].acf.description);
+// console.log("Date:"+items[i].date);
+// console.log("Content:"+items[i].content.rendered);
+// console.log("Image:"+items[i].better_featured_image.source_url);
+// console.log("\n##################################");
+
 
 
   return items;
@@ -19,20 +22,25 @@ console.log("\n##################################");
 }
 
 async function PopulatePage() {
+  
+  
   const items = await getWithFetch();
+  
+  //const i=Math.floor(Math.random() * 10);
   //console.log(posts);
+  let i=Math.floor(Math.random() * 3);
   let selector = document.querySelector("#PPageTitle");
-  selector.innerText=items[0].title.rendered;
+  selector.innerText=items[i].title.rendered;
   selector = document.querySelector("#PPageDesc");
-  selector.innerText=items[0].acf.description;
+  selector.innerText=items[i].acf.description;
   selector = document.querySelector("#PpageDescDate");
-  selector.innerText="Completed on "+ items[0].date;
+  selector.innerText="Completed on "+ items[i].date;
   selector = document.querySelector("#PPageProjectDetailContImg");
   const inner = document.createElement("img");
-  inner.src=items[0].better_featured_image.source_url;
+  inner.src=items[i].better_featured_image.source_url;
   selector.appendChild(inner);
   selector=document.querySelector("#PPageProjectDetailContTxt");
-  selector.innerHTML=items[0].content.rendered;
+  selector.innerHTML=items[i].content.rendered;
   // const myDiv = document.querySelector(".posts");
   /*
   posts.forEach((post) => {
