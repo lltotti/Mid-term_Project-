@@ -169,6 +169,7 @@ height: 52px;
 /* left: 1120px;
 top: 70px; */
 
+
 /* Primary/Default */
 background: #072AC8;
 }
@@ -176,6 +177,7 @@ background: #072AC8;
 .btn-link {
     text-decoration: none;
     color: #FFFFFF;
+    padding: 15px 32px;
 }
 
 .hero{
@@ -751,7 +753,7 @@ border: 0px solid white;
 /* position: absolute; */
 width: 100%;
 height: 242px;
-border: 2px solid gray;
+/* border: 2px solid gray; */
 margin-top:200px;
 
 }
@@ -766,7 +768,7 @@ margin-top:200px;
     height: 112px;
     margin-left: auto;
     margin-right:auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     
 }
 .footer img{
@@ -781,13 +783,13 @@ height: 30px;
 height: 108px;
 /* left: 170px;
 top: 30px; */
-border: 3px solid gray;
+/* border: 3px solid gray; */
 
 
 }
 
 .footer-logo-left p{
-border: 2px solid #292E47;
+/* border: 2px solid #292E47; */
 margin:0px;
 display:flex;
 justify-self:end;
@@ -795,7 +797,7 @@ justify-self:end;
 }
 
 #footer-links{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -808,7 +810,7 @@ height: 112px;
 .footer-links-divs-pair{
     display: flex;
     flex-direction: column  ;
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     justify-content:space-between;
 
     display: flex;
@@ -828,7 +830,7 @@ height: 112px;
     /* left: calc(50% - 1440px/2); */
     margin-top: 98px;
     /* top: 226px; */
-    border: 3px solid rgb(231, 35, 35); 
+    /* border: 3px solid rgb(231, 35, 35);  */
 }
 
 .ProjectSection-container{
@@ -846,12 +848,12 @@ height: 112px;
 .PPageProjectDetailsCont{
     margin-top:80px;
     height: 950px;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
 }
 #PPageProjectDetailContImg{
     max-height: 440px;
     /* max-width: 1100px; */
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 #PPageProjectDetailContImg img{
@@ -861,11 +863,74 @@ height: 112px;
 #PPageProjectDetailContTxt{
     margin-top:70px;
     height: 420px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
-/* @media (max-width: 480px){
-.header .hero .projects .testimonial .client {
+
+.section-contact{
+    /* position: absolute; */
     max-width: 100%;
+    height: 650px;
+    /* left: calc(50% - 1440px/2); */
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 98px;
+    /* top: 226px; */
+    /* border: 3px solid rgb(231, 35, 35);  */
 }
-} */
+
+#email-phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    /* border: 2px solid gray; */
+}
+
+#name, #email_phone,#email, #phone, #message, #btn-submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 20%; */
+    /* height: 10%; */
+    /* border: 2px solid gray; */
+}
+
+#message input{
+    height: 100px;
+    
+}
+.contact-form span{
+    width: 10%;
+}
+#btn-submit{
+    margin-top: 40px;
+    
+}
+.contact-form input{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(107, 112, 141, 0.1);
+    border:0px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+           
+    /* position: absolute; */
+    max-width: 1100px;
+    height: 650px;
+    /* left: 170px; */
+    /* top: 0px; */
+    /* border: 5px solid orange;  */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 480px){
+.header .hero .projects .testimonial .client {
+    
+}
+} 
 
