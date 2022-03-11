@@ -41,6 +41,7 @@ async function PopulatePage() {
   selector.appendChild(inner);
   selector=document.querySelector("#PPageProjectDetailContTxt");
   selector.innerHTML=items[i].content.rendered;
+  
   // const myDiv = document.querySelector(".posts");
   /*
   posts.forEach((post) => {
